@@ -1,15 +1,14 @@
 import React from "react";
 
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const Menu = () => {
   return (
     <nav>
       <ul>
         {routes.map((route) => (
-          <li>
+          <li key={route.id}>
             <NavLink
-              key={route.id}
               style={({ isActive }) => ({ color: isActive ? "red" : "blue" })}
               to={route.to}
               end
@@ -18,7 +17,7 @@ export const Menu = () => {
             </NavLink>
           </li>
         ))}
-        
+
         {/* <li>
           <Link to="/">Home</Link>
         </li>
@@ -54,6 +53,7 @@ export const Menu = () => {
             Profile
           </NavLink>
         </li> */}
+        
       </ul>
     </nav>
   );
