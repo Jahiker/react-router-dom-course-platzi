@@ -1,0 +1,30 @@
+# REACT ROUTER 
+
+## Cuando necesitamos Router?
+- Cuando la aplicacion demanda los siguientes puntos:
+- Mejor shareability
+- Separacion de responsabilidades
+- Menos portales/condicionales manuales en la UI
+
+## SSR vs SPA 
+- SSR (Server Side Rendering): Por cada peticion al Backend, la respuesta es todo el Html, Css y Js incluido en la vista, es mas rapida la primera carga pero la navegación es más lento que SPA.
+- SPA (Single Page Aplication): Con la petición inicial al servidor la respues es un html vacio con un Bundle de js que se encarga de manipular el DOM y mostrar las vista, la primera carga es mas lenta pero la navegacion es mas rapida que el SSR.
+
+## PSSR (Progresive Server Side Rendering)
+- SSR en la primera carga y SPA para la navegacion
+- Para realizar esto con react, se realiza un proceso denominado hidratacion 
+
+## Tipos de Router
+- Browser Router: /slug
+- Hash Router: /#/slug 
+- Memory Router: Tener fe?
+
+# Componentes de React Router DOM
+- Router: HashRouter, WebRouter: Es el provider que envuelve a toda la SPA
+- Routes: Es el componente que envuelve a las rutas
+- Route: Es el componente para definir el path y el elemento que renderiza cada ruta
+- Link: Reeemplaza a los elementos <a></a> y nos proporciona una navegacion sin recargar la pagina
+- NavLink: Cumple la misma funcion que el componente pero este es mas flexible ya que podemos recibir en los atributos el valor isActive que nos indica cuando esta activa una vista del elemento del menu 
+
+## Rutas Dinamicas
+- Utilizamos el Hook useParams
