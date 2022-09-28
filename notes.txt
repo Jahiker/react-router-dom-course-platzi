@@ -28,3 +28,33 @@
 
 ## Rutas Dinamicas
 - Utilizamos el Hook useParams
+
+=============================================================
+
+### APORTE EN COMENTARIOS
+
+¿Qué son las rutas dinámicas?
+Digamos que tenemos una aplicación la cual nos envía a cierto contenido, ejemplo aplicación/blog/como-aprender-react, esta ultima parte en negro se llama slug, lo que nos permite es tener una base en la que exponer cierto contenido, pero intercalando la información en caso de que el slug cambie también.
+
+Por ejemplo, en caso de que cambiemos el enlace pero la base sea la misma ejemplo: aplicación/blog/como-aprender-svelte, nos daríamos cuenta de que la maquetación sigue siendo la misma, solo que tiene diferente información, ya que si el slug cambia, el contenido cambia, pero como parte de una sola base, tiene la misma composición pero diferente contenido.
+
+Un ejemplo rápido de las rutas dinámicas son los perfiles en Facebook, tienen la misma composición, tienen una foto de perfil, de portada, un nombre, información del usuario, estados y publicaciones; pero el perfil de Juanita no es el mismo que el de Pepe, ya que cada uno tiene información diferente porque son personas diferentes y publican diferente contenido.
+
+Creemos nuestras rutas dinámicas
+Vamos a hacer nuestras rutas dinámicas en nuestro componente de BlogPage:
+
+=============================================================
+
+## UseNavigate (Historial de Navegacion)
+
+- Es un Hook de React Router Dom que nos permite acceder al historial de navegacion 
+- const navigate = useNavigate() => desde navigate podemos acceder al historial de navegacion e implementar navegacion manual 
+- navigate puede recibir una ruta o un numero entero positivo o negavito | navigate('/') => lleva el home | navigate(-1) => lleva a la pagina anterior 
+
+## OUTLET
+
+- Es un componente de React Router Dom en la version 6 que nos ayuda a trabajar con nested routes 
+- nested => cosas dentro de otras cosas, en este caso serian rutas dentro de otras rutas 
+
+## useAuth: login & logout
+- 

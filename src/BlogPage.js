@@ -1,7 +1,5 @@
 import React from "react";
-
-import { Link } from "react-router-dom";
-
+import { Link, Outlet } from "react-router-dom";
 import { blogdata } from "./blogdata";
 
 export const BlogPage = () => {
@@ -11,8 +9,9 @@ export const BlogPage = () => {
       <ul>
         {blogdata.map((post) => (
           <BlogLink post={post} key={post.slug} />
-        ))}
+          ))}
       </ul>
+      <Outlet />
     </>
   );
 };
