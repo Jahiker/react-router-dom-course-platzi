@@ -58,3 +58,7 @@ Vamos a hacer nuestras rutas dinámicas en nuestro componente de BlogPage:
 
 ## useAuth: login & logout
 - 
+
+## Navigate 
+- es un componente de react router dom que nos permite navegar una ruta indicada al renderizar el componente 
+- lo que es igual a una redireccion 
